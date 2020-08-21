@@ -15,7 +15,7 @@ const httpServer = require('http').createServer(app);
 
 app.use(express.static("public"));
 
-// let port = process.env.PORT||3000;
-httpServer.listen(3011, function () {
+let port = process.env.PORT||3000;
+httpServer.listen(port, function () {
     console.log("Server started at port 3011");
 })
